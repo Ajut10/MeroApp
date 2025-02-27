@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton simpleInterestImageBtn = findViewById(R.id.simpleInterestImageBtn);
 
-
+        ImageButton calculateBtn = findViewById(R.id.calculateImageBtn);
         simpleInterestImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,5 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        calculateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent calIntent = new Intent(MainActivity.this, CalculatorActivity.class);
+                startActivity(calIntent);
+            }
+        });
     }
+
+
 }

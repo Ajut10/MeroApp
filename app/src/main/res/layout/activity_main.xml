@@ -23,17 +23,43 @@
         android:layout_height="80sp"
         android:background="@drawable/rectangle_base"
         android:src="@drawable/simpleinterest"
-        android:tint="@color/white"
+        app:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="90sp"
         android:layout_height="wrap_content"
         android:text="@string/simple_interest"
         android:textAlignment="center"
-        android:textSize="20sp"
 
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simpleInterestImageBtn" />
+
+    <ImageButton
+        android:id="@+id/calculateImageBtn"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:background="@drawable/rectangle_base"
+        android:src="@drawable/calulate_vect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/simpleInterestImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/calculateImageBtn" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MeroApp</string>
     <string name="simple_interest">Simple Interest</string>
+    <string name="calculate">Calculator</string>
 </resources>
